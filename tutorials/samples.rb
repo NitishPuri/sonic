@@ -8,4 +8,9 @@
 ##|   sleep n
 ##| end
 
-sample :loop_amen, start: 0.5, finish: 0.8, rate: -0.2, attack: 0.3, release: 1
+##| sample :loop_amen, start: 0.5, finish: 0.8, rate: -0.2, attack: 0.3, release: 1
+
+loop do
+  sample :loop_amen, onset: pick, sustain: 0, release: 0.1
+  sleep 0.125
+end
